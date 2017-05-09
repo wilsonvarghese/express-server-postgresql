@@ -1,0 +1,42 @@
+{
+  "name": "express-server-postgresql",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha ./test/**/*.spec.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.49.0",
+    "body-parser": "~1.15.2",
+    "express": "~4.14.0",
+    "jsonwebtoken": "^7.4.0",
+    "pg": "^6.1.5"
+  },
+  "description": "a sample nodejs express project with postgresql backend, JWT authentication and mocha tests",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "express",
+    "postgresql",
+    "jwt",
+    "mocha"
+  ],
+  "author": "Wilson Varghese",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilsonvarghese/express-server-postgresql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wilsonvarghese/express-server-postgresql/issues"
+  },
+  "homepage": "https://github.com/wilsonvarghese/express-server-postgresql#readme"
+}

@@ -1,2 +1,4 @@
 # express-server-postgresql
-Sample project with node express server with postgresql, JWT authentication and mocha  
+a sample nodejs express project with postgresql backend, JWT authentication and mocha tests
+
+
