@@ -1,19 +1,21 @@
 {
   "WOS": {
     "dbConfig": {
-      "host": "localhost", // 'localhost' is the default;
+      "host": "ec2-54-83-205-71.compute-1.amazonaws.com", // 'localhost' is the default;
       "port": 5432, // 5432 is the default;
-      "database": "wosPRODdb",
-      "user": "wilson",
-      "password": "password-1"
-    }
-  },
-  "JWT":{
-      "jwt_secret": "wilson_prod"
+      "database": "dcij566dfh30gj",
+      "user": "ufsnltazcgadnt",
+      "password": "780a7572d7ef14ac6793bd5c8f0478fcb4a53e413e45e72a619fd7231a0cc969"
     },
-  "AWS": {
-      "accessKeyId": "Your Access key",
-      "secretAccessKey": "your secret key",
-      "region":"Your aws region"
-    }
+    "JWT":{
+        "jwt_secret": "wilson_dev"
+      },  
+    "AWS": {
+        "accessKeyId": "Your Access key",
+        "secretAccessKey": "your secret key",
+        "region":"Your aws region"
+      }      
+  }
 }
+
+
