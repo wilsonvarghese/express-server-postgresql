@@ -1,5 +1,5 @@
 deployment:
-  production:
+  test:
     branch: master
     heroku:
       appname: express-server-postgresql
