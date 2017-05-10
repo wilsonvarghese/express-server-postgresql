@@ -3,7 +3,10 @@ const express = require('express');
 const router = express.Router();
 let User   = require('../models/user');
 const jwt    = require('jsonwebtoken'); // used to create, sign, and verify tokens
-const config = require('../../config/config');
+const config = require('config');
+
+//get config values for the environment
+let jwtAuth = config.get('WOS.JWT');
 
 var user_api = require('../controllers/userController');
 var aws_api = require('../controllers/awsController');
@@ -33,7 +36,7 @@ router.use(function(req, res, next) {
 	if (token) {
 
 		// verifies secret and checks exp
-		jwt.verify(token, config.jwt_secret, function(err, decoded) {			
+		jwt.verify(token, jwtAuth.jwt_secret, function(err, decoded) {			
 			if (err) {
 				return res.json({ success: false, message: 'Failed to authenticate token.' });		
 			} else {

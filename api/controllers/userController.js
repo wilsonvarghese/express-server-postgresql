@@ -1,6 +1,9 @@
 var User = require('../models/user');
 const jwt    = require('jsonwebtoken'); // used to create, sign, and verify tokens
-const config = require('../../config/config');
+const config = require('config');
+
+//get config values for the environment
+let jwtAuth = config.get('WOS.JWT');
 
 /* GET all users. */
 var GetAllUsers = function (req, res) {
@@ -50,7 +53,7 @@ var AuthenticateUser = function(req, res){
         if(user.success == false){
             return res.json({success:false, token: null});
         }
-        let token = jwt.sign(user, config.jwt_secret, {
+        let token = jwt.sign(user, jwtAuth.jwt_secret, {
             expiresIn: 1440 // expires in 1 hour
         });
         res.json({success:true, token: token});

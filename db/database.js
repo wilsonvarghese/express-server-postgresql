@@ -1,10 +1,15 @@
 const pg = require('pg');
-const config = require('../config/config');
+
+const config = require('config');
+//const config = require('../config/config');
+
+//get config values for the environment
+let dbConfig = config.get('WOS.dbConfig');
 
 //this initializes a connection pool
 //it will keep idle connections open for 30 seconds
 //and set a limit of maximum 10 idle clients
-const pool = new pg.Pool(config.dbConfig.devUrl);
+const pool = new pg.Pool(dbConfig);
 
 pool.on('error', function (err, client) {
   // if an error is encountered by a client while it sits idle in the pool
