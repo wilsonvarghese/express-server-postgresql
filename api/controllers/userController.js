@@ -1,3 +1,5 @@
+"use strict";
+
 var User = require('../models/user');
 const jwt    = require('jsonwebtoken'); // used to create, sign, and verify tokens
 const config = require('config');

@@ -1,3 +1,5 @@
+"use strict";
+
 // Import dependencies
 const express = require('express');
 const router = express.Router();

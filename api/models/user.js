@@ -1,3 +1,5 @@
+"use strict";
+
 const pool = require('../../db/database');
 
 /*authenticateUser*/
