@@ -11,7 +11,7 @@ chai.use(chaiHttp);
 describe('Authenticate user', () => {
       it('Should authenticate user and return token', (done) => {
         let req = {
-            email: "testuser@gmail.com",
+            email: "adminuser@gmail.com",
             password: "password-1"
         }
         chai.request(server)
