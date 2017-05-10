@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 deployment:
   production:
     branch: master
     heroku:
       appname: express-server-postgresql
-=======
-
->>>>>>> 955e9f775179ebb6ace333d537ace4b014878f2f
