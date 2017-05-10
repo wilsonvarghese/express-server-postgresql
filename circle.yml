@@ -1,5 +1,8 @@
 deployment:
-  test:
+  staging:
     branch: master
     heroku:
       appname: express-server-postgresql
+test:
+  override:    
+    - mocha 
