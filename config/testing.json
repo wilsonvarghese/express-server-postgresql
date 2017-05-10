@@ -1,11 +1,11 @@
 {
   "WOS": {
     "dbConfig": {
-      "host": "localhost", // 'localhost' is the default;
+      "host": "ec2-54-83-205-71.compute-1.amazonaws.com", // 'localhost' is the default;
       "port": 5432, // 5432 is the default;
-      "database": "wostestdb",
-      "user": "wilson",
-      "password": "password-1"
+      "database": "dcij566dfh30gj",
+      "user": "ufsnltazcgadnt",
+      "password": "780a7572d7ef14ac6793bd5c8f0478fcb4a53e413e45e72a619fd7231a0cc969"
     }
   },
   "JWT":{
