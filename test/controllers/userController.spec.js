@@ -9,14 +9,13 @@ chai.use(chaiHttp);
 describe('Authenticate user', () => {
       it('Should authenticate user and return token', (done) => {
         let req = {
-            email: "mailwkv@gmail.com",
+            email: "testuser@gmail.com",
             password: "password-1"
         }
         chai.request(server)
             .post('/authenticate')
             .send(req)
             .end((err, res) => {
-                //console.log(res.body);
                 res.should.have.status(200);
                 res.body.should.be.a('object');
                 res.body.should.have.property('success').and.equal(true);

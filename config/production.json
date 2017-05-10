@@ -1,0 +1,19 @@
+{
+  "WOS": {
+    "dbConfig": {
+      "host": "localhost", // 'localhost' is the default;
+      "port": 5432, // 5432 is the default;
+      "database": "wosPRODdb",
+      "user": "wilson",
+      "password": "password-1"
+    }
+  },
+  "JWT":{
+      "jwt_secret": "wilson_prod"
+    },
+  "AWS": {
+      "accessKeyId": "Your Access key",
+      "secretAccessKey": "your secret key",
+      "region":"Your aws region"
+    }
+}

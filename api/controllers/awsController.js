@@ -1,5 +1,8 @@
 const AWS = require('aws-sdk');
-const awsConfig = require('../../config/config').awsConfig;
+const config = require('config');
+
+//get config values for the environment
+let awsConfig = config.get('WOS.AWS');
 
 AWS.config.update({
     accessKeyId: awsConfig.accessKeyId,
